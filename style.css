@@ -54,6 +54,7 @@ main {
     padding: 3rem 1.5rem 4rem;
     max-width: 820px;
     margin: 0 auto;
+    text color: black;
 }
 
 h1#top {
@@ -186,4 +187,5 @@ footer {
         padding: 0 0.8rem;
     }
 }
+
 
