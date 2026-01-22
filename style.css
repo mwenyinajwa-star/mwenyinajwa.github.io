@@ -1,15 +1,14 @@
-/*all sections should appear as blocks*/
-article, aside, footer, header, main, nav, section{display: block;}
-html, body, h1, h2, h3, ul, li, a, p, article, aside, footer, header, main, nav, section{
-padding:0; 
-margin:0;}
-/*main border to the web page*/
-.banner{ 
-background-color: #D2222C;
-color: #fff;
-padding: 10px 20px;
-}
-body{
+
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333; /* Dark grey for high visibility */
+    background-color: #f4f7f6;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+ 
 width: 960px;
  margin-left: auto;
   margin-right: auto;
@@ -51,16 +50,6 @@ section {
   background-color: #EF5A5F;
   margin-top: 10px;
   padding: 5px;
-}
-/* General Page Styling */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333; /* Dark grey for high visibility */
-    background-color: #f4f7f6;
-    margin: 0;
-    padding: 0;
-    text-align: center;
 }
 
 .container {
@@ -138,3 +127,4 @@ footer {
     color: #7f8c8d;
 
 }
+
