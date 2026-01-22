@@ -1,85 +1,106 @@
-/* General Page Styling */
+/* global.css  or  styles.css */
+
+/* ===== Reset / Base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    line-height: 1.6;
-    color: #333; /* Dark grey for high visibility */
-    background-color: pink;
-    margin: 0;
-    padding: 0;
-    text-align: center;
+  background-color: hotpink;
+  color: #222;           /* default text color for content area */
+  font-family: system-ui, -apple-system, sans-serif;
+  min-height: 100vh;
 }
 
-.container {
-    padding: 40px 20px;
-}
-
-/* Navbar Styling */
+/* ===== Navbar ===== */
 .navbar {
-    background-color: white;
-    padding: 15px 0;
+  background-color: white;
+  padding: 1rem 5%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-.navbar a {
-    color: red;
-    text-decoration: none;
-    margin: 0 15px;
-    font-weight: bold;
-    transition: color 0.3s;
+.nav-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.navbar a:hover {
-    color: red;
+/* Brand / Logo */
+.navbar-brand {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #c8102e;          /* a nice vivid red */
+  text-decoration: none;
 }
 
-/* Heading */
-h1 {
-    color: whites;
-    margin-bottom: 30px;
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 2.2rem;
+  list-style: none;
 }
-.image-container img {
-    width: 300px;
-    height: 350px;
+
+.nav-links a {
+  color: #c8102e;          /* red text */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: all 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links a:focus {
+  color: #a00d24;          /* darker red on hover */
+  text-decoration: underline;
+}
+
+/* Optional: mobile menu button (hamburger) */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  background: none;
+  border: none;
+  color: #c8102e;
+  cursor: pointer;
+}
+
+/* ===== Main content spacing ===== */
+main {
+  max-width: 1200px;
+  margin: 2.5rem auto;
+  padding: 0 5%;
+}
+
+/* ============================================= */
+/*               Example HTML usage              */
+/* ============================================= */
+
+/*
+
+<nav class="navbar">
+  <div class="nav-container">
+    <a href="/" class="navbar-brand">My Hotpink Site</a>
     
-    /* 1. THE FIX: Ensures the circle cut-out works */
-    object-fit: cover; 
-    border-radius: 50%; 
-    display: block;
-    margin: 20px auto; 
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/shop">Shop</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
 
-    /* 2. STYLE: Professional border and shadow */
-    border: 8px solid pink;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    
-    /* 3. ANIMATION: Subtle zoom when you hover */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
+<main>
+  <h1>Welcome to the hotpink experience 🌸</h1>
+  <p>All navbar text is red, background is hotpink.</p>
+</main>
 
-/* Add a nice glow when you hover over your photo */
-.image-container img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 15px 35px rgba(52, 152, 219, 0.3);
-    border-color: #3498db; /* Changes border to blue on hover */
-}
-.bio {
-    max-width: 600px;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    background: grey;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-}
-
-.mbale {
-    color: #e67e22; /* Adds a pop of color to the keyword */
-    font-weight: bold;
-}
-
-/* Footer */
-footer {
-    margin-top: 50px;
-    padding: 20px;
-    font-size: 0.9rem;
-    color: red;
-}
+*/
