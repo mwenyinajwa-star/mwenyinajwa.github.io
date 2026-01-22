@@ -15,7 +15,7 @@ body {
 
 /* Navbar Styling */
 .navbar {
-    background-color: red;
+    background-color: white;
     padding: 15px 0;
 }
 
@@ -83,6 +83,7 @@ footer {
     font-size: 0.9rem;
     color: red;
 }
+
 
 
 
