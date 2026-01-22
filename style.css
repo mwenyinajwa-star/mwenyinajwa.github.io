@@ -1,5 +1,85 @@
-body { font-family: system-ui, sans-serif; background: #ff69b4; color: #111; text-align: center; padding: 40px 20px; }
-.navbar { background: red; padding: 16px; }
-nav a { color: white; margin: 0 18px; font-size: 1.1rem; text-decoration: none; }
-nav a:hover { color: #ffff00; border-bottom: 3px solid #ffff00; }
-img { width: 220px; height: 220px; border-radius: 50%; border: 6px solid white; box-shadow: 0 8px 25px rgba(0,0,0,0.25); margin: 30px auto; }
+/* General Page Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333; /* Dark grey for high visibility */
+    background-color: PINK;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.container {
+    padding: 40px 20px;
+}
+
+/* Navbar Styling */
+.navbar {
+    background-color: red;
+    padding: 15px 0;
+}
+
+.navbar a {
+    color: red;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+/* Heading */
+h1 {
+    color: red;
+    margin-bottom: 30px;
+}
+.image-container img {
+    width: 300px;
+    height: 350px;
+    
+    /* 1. THE FIX: Ensures the circle cut-out works */
+    object-fit: cover; 
+    border-radius: 50%; 
+    display: block;
+    margin: 20px auto; 
+
+    /* 2. STYLE: Professional border and shadow */
+    border: 8px solid pink;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    
+    /* 3. ANIMATION: Subtle zoom when you hover */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+/* Add a nice glow when you hover over your photo */
+.image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(52, 152, 219, 0.3);
+    border-color: #3498db; /* Changes border to blue on hover */
+}
+.bio {
+    max-width: 600px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    background: grey;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.mbale {
+    color: #e67e22; /* Adds a pop of color to the keyword */
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    font-size: 0.9rem;
+    color: red;
+}
