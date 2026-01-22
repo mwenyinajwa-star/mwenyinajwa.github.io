@@ -28,7 +28,7 @@ body {
 }
 
 .navbar a:hover {
-    color: red;
+    color: white;
 }
 
 /* Heading */
@@ -83,3 +83,4 @@ footer {
     font-size: 0.9rem;
     color: red;
 }
+
