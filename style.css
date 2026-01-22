@@ -16,6 +16,7 @@ body {
 
 /* ─── Navigation ─────────────────────────────────────── */
 .navbar {
+    text-align: center;
     background: #0f2027;
     background: linear-gradient(135deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
     padding: 1.1rem 2rem;
@@ -30,6 +31,7 @@ nav {
 }
 
 nav a {
+    text-align: center;
     color: #d1e8ff;
     text-decoration: none;
     font-weight: 500;
@@ -44,6 +46,7 @@ nav a:hover,
 nav a:focus {
     color: #4da8ff;
     border-bottom: 3px solid #4da8ff;
+    text-align: center;
 }
 
 /* ─── Main Content ───────────────────────────────────── */
@@ -183,3 +186,4 @@ footer {
         padding: 0 0.8rem;
     }
 }
+
