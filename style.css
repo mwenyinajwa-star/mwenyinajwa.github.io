@@ -154,5 +154,76 @@ footer {
     font-size: 0.85rem;
     letter-spacing: 1px;
 }
+/* Form Styling */
+form {
+    max-width: 500px;
+    margin: 30px auto;
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    text-align: left; /* Aligns labels to the left */
+}
+
+/* Style for Labels (Name, Email, Message) */
+form {
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+/* Input and Textarea fields */
+input[type="text"], 
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-sizing: border-box; /* Ensures padding doesn't break width */
+    font-family: inherit;
+}
+
+/* Send Button */
+button {
+    background-color: #18bc9c;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #128f76;
+}
+
+/* Social Media Section */
+.socials {
+    margin: 40px 0;
+}
+
+.socials a {
+    display: inline-block;
+    text-decoration: none;
+    color: #2c3e50;
+    background: #ecf0f1;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.socials a:hover {
+    background-color: #3498db;
+    color: white;
+    transform: translateY(-3px);
+}
 
 
