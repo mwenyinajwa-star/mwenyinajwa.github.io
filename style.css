@@ -89,4 +89,9 @@ footer {
   width: 400px;                 /* Slightly smaller for better proportion */
   height: 400px;                /* Same height as width to keep it perfectly round */
 }
+<section class="contentalt-bg">
+  <h1><b>My Personal Business</b></h1>
+  <h2>ZYLOPOP JEWELLERY LIMITED</h2>
+  <img src="img.jpeg.png" alt="Zylopop Jewellery">
+</section>
 
